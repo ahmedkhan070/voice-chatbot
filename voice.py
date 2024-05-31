@@ -4,7 +4,7 @@ import google.generativeai as genai
 import pyttsx3
 
 # Configure Google's Generative AI
-GOOGLE_API_KEY = 'AIzaSyAJ0e7u-UVPayP7Dnq6JjyFfPVs0xt-LPQ'
+GOOGLE_API_KEY = st.secrets['GOOGLE_API_KEY']
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-1.5-pro-latest')
 
